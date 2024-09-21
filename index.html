@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHSNH Survey Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <!-- Heading Section -->
+
+    <div id="heading">
+    <h1 id=title>BHSNH Feedback Survey</h1>
+    <p id="description">We appreciate your time in providing feedback to help us improve our programs and services. Your responses will help us tailor future offerings to better meet the needs of our community.</p>
+    </div>
+
+    <!-- Main Questions -->
+  
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="name-label"><b>Your name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Enter your name"><br>
+            <br>
+            <label id="email-label"><b>Your e-mail address:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="number-label"><b>Your age (Optional):</b></label>
+            <input id="number" type="number" name="number" class="form" min="6" max="99" placeholder="Age">
+        </div>
+
+        <div id="dropdown-div">
+            <label id="dropdown-label"><b>Which option best describes your current role? </b></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="full-time student">Full-time student</option>
+                <option value="full-time job">Full-time job</option>
+                <option value="part-time job">Part-time job</option>
+                <option value="housewife/homemaker">Housewife/Homemaker</option>
+                <option value="retired">Retired</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="others">Others</option>
+            </select>
+         </div>
+
+         <div id="button-area">
+            <label id="job-label"><b>How often do you currently participate in our programs?</b></label><br>
+            <input type="radio" class="radio-inline" name="gender" value="weekly" checked> Weekly<br>
+            <input type="radio" class="radio-inline" name="gender" value="monthly"> Monthly<br>
+            <input type="radio" class="radio-inline" name="gender" value="occasionally"> Occasionally<br>
+            <input type="radio" class="radio-inline" name="gender" value="never"> Never
+          </div>
+
+          <div id="button-area">
+            <label id="os-label"><b>What time would you prefer for activities and courses?</b></label><br>
+            <input type="checkbox" name="os1" value="morning" checked> Morning (9am–12pm)<br>
+            <input type="checkbox" name="os2" value="afternoon"> Afternoon (1pm–4pm)<br>
+            <input type="checkbox" name="0s3" value="evening"> Evening (5pm–8pm)<br>
+            <input type="checkbox" name="0s3" value="no preference"> No preference<br>
+          </div>
+
+          <div id="button-area">
+            <label id="os-label"><b>Which age group do you think we need more courses or activities for?</b></label><br>
+            <input type="checkbox" name="os1" value="seniors" checked> Seniors (65+)<br>
+            <input type="checkbox" name="os2" value="adults"> Adults (18–65)<br>
+            <input type="checkbox" name="0s3" value="teenagers "> Teenagers (12–18)<br>
+            <input type="checkbox" name="0s3" value="children"> Children (under 12)<br>
+          </div>
+
+          <div id="button-area">
+            <label id="os-label"><b>Which of the following programs are you most interested in?</b></label><br>
+            <input type="checkbox" name="tech1" value="art & craft"> Art & Craft<br>
+            <input type="checkbox" name="tech2" value="computers & technology"> Computers & Technology<br>
+            <input type="checkbox" name="tech3" value="exercise, fitness & dancing"> Exercise, Fitness & Dancing<br>
+            <input type="checkbox" name="tech3" value="health & wellbeing"> Health & Wellbeing<br>
+            <input type="checkbox" name="tech3" value="languages"> Languages<br>
+            <input type="checkbox" name="tech3" value="literature and writing"> Literature and Writing<br>
+            <input type="checkbox" name="tech3" value="music"> Music<br>
+            <input type="checkbox" name="tech3" value="social activities and games"> Social Activities and Games<br>
+            <input type="checkbox" name="tech3" value="others"> Others <br>
+          </div>
+
+          <div id="ending">
+            <label id="comments-label"><b>What type of new programs or courses would you like to see in the future?</b></label><br>
+            <textarea style= height:120px; class="form" placeholder="Please enter your suggestion here..."></textarea><br><br>
+            <input id="submit" type="submit"  class="form">
+          </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="copyright">
+        <p>&copy; BHSNH 2024</p>
+      </div>
+    </footer>
+
+</body>
+</html>
